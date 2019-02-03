@@ -1,0 +1,12 @@
+{application,sms_blitz,
+             [{applications,[kernel,stdlib,elixir,logger,httpoison]},
+              {description,"Send SMS messages through various different suppliers"},
+              {modules,['Elixir.SmsBlitz','Elixir.SmsBlitz.Adapter',
+                        'Elixir.SmsBlitz.Adapters.Itagg',
+                        'Elixir.SmsBlitz.Adapters.Nexmo',
+                        'Elixir.SmsBlitz.Adapters.Nexmo.Config',
+                        'Elixir.SmsBlitz.Adapters.Plivo',
+                        'Elixir.SmsBlitz.Adapters.Twilio',
+                        'Elixir.SmsBlitz.Adapters.Twilio.Config']},
+              {registered,[]},
+              {vsn,"0.2.0"}]}.
